@@ -185,6 +185,16 @@ Remove Pokémon.
 Lista Pokémon cadastrados.
 
 ---
+## Fluxo de Versionamento
+O projeto segue Git Flow:
+- **main**: versão estável.
+- **develop**: integração de features.
+- **feat/**: desenvolvimento de funcionalidades.
+- **release/**: preparação de entregas.
+- **hotfix/**: correções rápidas.
+
+Todas as features são integradas via **Pull Requests** no GitHub, garantindo revisão e histórico limpo.
+
 
 # 💻 Exemplos de Execução
 
