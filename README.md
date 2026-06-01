@@ -276,7 +276,7 @@ docs/readme
 
 ---
 
-# ## Organização do Kanban
+ ## Organização do Kanban
 
 Projeto organizado utilizando GitHub Projects.
 
