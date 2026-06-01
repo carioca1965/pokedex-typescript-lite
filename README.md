@@ -276,12 +276,15 @@ docs/readme
 
 ---
 
-# 📋 Kanban
+# ## Organização do Kanban
 
-Adicionar aqui o link do seu quadro Kanban:
+Projeto organizado utilizando GitHub Projects.
 
-```text
+Link do Kanban:
+
 https://github.com/users/carioca1965/projects/2
+
+
 ```
 
 ---
