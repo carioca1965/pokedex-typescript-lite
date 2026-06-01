@@ -281,7 +281,7 @@ docs/readme
 Adicionar aqui o link do seu quadro Kanban:
 
 ```text
-LINK_DO_KANBAN
+https://github.com/users/carioca1965/projects/2/views/1
 ```
 
 ---
