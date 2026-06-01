@@ -1,68 +1,56 @@
+
 # 🎮 Pokédex TypeScript Lite
 
-<p align="center">
-
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)
-
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=nodedotjs\&logoColor=white)
-
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)
-
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)
-
 ![PokeAPI](https://img.shields.io/badge/PokeAPI-FFCB05?style=for-the-badge)
-
-</p>
 
 ---
 
-# 📖 Sobre o Projeto
+## 📖 Sobre o Projeto
 
 O **Pokédex TypeScript Lite** é uma aplicação desenvolvida em **Node.js + TypeScript** que realiza consultas na **PokeAPI** e organiza Pokémon em um catálogo local.
 
 Projeto desenvolvido para praticar:
 
-✅ TypeScript
-✅ Programação Orientada a Objetos
-✅ Consumo de API REST
-✅ Async/Await
-✅ Tratamento de Erros
-✅ Git e GitFlow
+* ✅ TypeScript
+* ✅ Programação Orientada a Objetos
+* ✅ Consumo de API REST
+* ✅ Async/Await
+* ✅ Tratamento de Erros
+* ✅ Git e GitFlow
 
 ---
 
-# 🎯 Objetivo
+## 🎯 Objetivo
 
 Construir uma aplicação back-end capaz de:
 
-🔍 Buscar Pokémon por nome ou ID
-
-📡 Consumir dados da PokeAPI
-
-📦 Armazenar Pokémon em catálogo local
-
-🚫 Evitar duplicidades
-
-📋 Listar Pokémon cadastrados
-
-🗑️ Remover Pokémon por ID
+* 🔍 Buscar Pokémon por nome ou ID
+* 📡 Consumir dados da PokeAPI
+* 📦 Armazenar Pokémon em um catálogo local
+* 🚫 Evitar duplicidades
+* 📋 Listar Pokémon cadastrados
+* 🗑️ Remover Pokémon por ID
 
 ---
 
-# 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-| Tecnologia | Uso                      |
-| ---------- | ------------------------ |
-| Node.js    | Ambiente de execução     |
-| TypeScript | Linguagem principal      |
-| TSX        | Execução dos arquivos TS |
-| PokeAPI    | API externa              |
-| Git        | Controle de versão       |
-| GitHub     | Hospedagem do projeto    |
+| Tecnologia | Uso                              |
+| ---------- | -------------------------------- |
+| Node.js    | Ambiente de execução             |
+| TypeScript | Linguagem principal              |
+| TSX        | Execução dos arquivos TypeScript |
+| PokeAPI    | API externa                      |
+| Git        | Controle de versão               |
+| GitHub     | Hospedagem do projeto            |
 
 ---
 
-# 📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
 ```text
 pokedex-typescript-lite/
@@ -83,12 +71,12 @@ pokedex-typescript-lite/
 
 ---
 
-# ⚙️ Instalação
+## ⚙️ Instalação
 
 ### 1️⃣ Clonar o repositório
 
 ```bash
-git clone https://github.com/carioca1965/pokedex-typescript-lite.git
+git clone git@github.com:carioca1965/pokedex-typescript-lite.git
 ```
 
 ### 2️⃣ Entrar na pasta
@@ -105,7 +93,7 @@ npm install
 
 ---
 
-# ▶️ Executando o Projeto
+## ▶️ Executando o Projeto
 
 ### Ambiente de Desenvolvimento
 
@@ -113,7 +101,7 @@ npm install
 npm run dev
 ```
 
-### Build
+### Compilar o Projeto
 
 ```bash
 npm run build
@@ -127,7 +115,7 @@ npm run start
 
 ---
 
-# 🚀 Funcionalidades
+## 🚀 Funcionalidades
 
 ### 🔍 Buscar Pokémon
 
@@ -139,7 +127,7 @@ Armazena Pokémon encontrados.
 
 ### 🚫 Evitar Duplicidade
 
-Não permite Pokémon repetidos.
+Não permite cadastrar Pokémon repetidos.
 
 ### 📋 Listar Catálogo
 
@@ -151,111 +139,92 @@ Remove Pokémon pelo ID.
 
 ### ⚠️ Tratamento de Erros
 
-Evita falhas quando Pokémon não existe.
+Evita falhas quando um Pokémon não existe.
 
 ---
 
-# 📚 Conceitos Aplicados
+## 📚 Conceitos Aplicados
 
-## Interfaces
+### Interfaces
 
 * PokemonResumo
 * PokemonApiResponse
 
-## Classe
+### Classe
 
 * CatalogoPokemon
 
-## Métodos de Array
+### Métodos de Array
 
-### map()
+* map() → transforma os tipos retornados pela API.
+* some() → verifica duplicidade.
+* filter() → remove Pokémon.
+* forEach() → lista Pokémon cadastrados.
 
-Transforma os tipos da API.
+### Async/Await
 
-### some()
+Utilizado para realizar chamadas assíncronas à PokeAPI.
 
-Verifica duplicidade.
+### Try/Catch
 
-### filter()
-
-Remove Pokémon.
-
-### forEach()
-
-Lista Pokémon cadastrados.
+Responsável pelo tratamento de erros durante as consultas.
 
 ---
-## Fluxo de Versionamento
-O projeto segue Git Flow:
-- **main**: versão estável.
-- **develop**: integração de features.
-- **feat/**: desenvolvimento de funcionalidades.
-- **release/**: preparação de entregas.
-- **hotfix/**: correções rápidas.
 
-Todas as features são integradas via **Pull Requests** no GitHub, garantindo revisão e histórico limpo.
+## 💻 Exemplos de Execução
 
+### ✅ Busca Válida
 
-# 💻 Exemplos de Execução
-
-## ✅ Busca Válida
-
-Entrada:
+**Entrada:**
 
 ```text
 pikachu
 ```
 
-Saída:
+**Saída:**
 
 ```text
 [OK] pikachu adicionado ao catálogo.
 #25 - pikachu | Tipos: electric | Altura: 4 | Peso: 60
 ```
 
----
+### ❌ Busca Inválida
 
-## ❌ Busca Inválida
-
-Entrada:
+**Entrada:**
 
 ```text
 pokemon-inexistente
 ```
 
-Saída:
+**Saída:**
 
 ```text
 [ERRO] Pokémon não encontrado: pokemon-inexistente
 ```
 
----
+### ⚠️ Duplicidade
 
-## ⚠️ Duplicidade
-
-Entrada:
+**Entrada:**
 
 ```text
 adicionar pikachu duas vezes
 ```
 
-Saída:
+**Saída:**
 
 ```text
 [AVISO] pikachu já está no catálogo.
 ```
 
----
+### 🗑️ Remoção
 
-## 🗑️ Remoção
-
-Entrada:
+**Entrada:**
 
 ```text
 remover ID 25
 ```
 
-Saída:
+**Saída:**
 
 ```text
 [OK] Pokémon removido do catálogo.
@@ -263,53 +232,44 @@ Saída:
 
 ---
 
-# 🌳 GitFlow
+## 🌳 GitFlow
 
 Branches utilizadas:
 
-```text
-main
-develop
-feat/pokedex
-docs/readme
-```
+* main
+* develop
+* feat/pokedex
+* docs/readme
 
 ---
 
- ## Organização do Kanban
+## 📋 Organização do Kanban
 
 Projeto organizado utilizando GitHub Projects.
 
-Link do Kanban:
+Kanban:
 
 https://github.com/users/carioca1965/projects/2
 
+---
 
-```
+## 🔗 Repositório
+
+[git@github.com](mailto:git@github.com):carioca1965/pokedex-typescript-lite.git
 
 ---
 
-# 🔗 Repositório
+## 🔮 Melhorias Futuras
 
-https://github.com/carioca1965/pokedex-typescript-lite
-
----
-
-# 🔮 Melhorias Futuras
-
-✨ Criar menu interativo
-
-✨ Salvar catálogo em JSON
-
-✨ Exibir HP, Ataque e Defesa
-
-✨ Filtrar por tipo
-
-✨ Criar API própria com Express
+* ✨ Criar menu interativo
+* ✨ Salvar catálogo em JSON
+* ✨ Exibir HP, Ataque e Defesa
+* ✨ Filtrar por tipo
+* ✨ Criar API própria com Express
 
 ---
 
-# 👨‍💻 Autor
+## 👨‍💻 Autor
 
 **Carlos Eduardo Pereira Pedroza**
 
